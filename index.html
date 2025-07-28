@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+    <!-- this section contains heading and navbar -->
+    <section class="heading">
+        <header>
+            <h1>Shrishti Gaur</h1>
+            <p>~Upto learning something great.</p>
+        </header>
+        <nav id="navbar">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </section>
+    <section class="sections">
+            <!-- home -->
+        <div id="Home">
+            <img src="shrishtigaur.jpg"> 
+        </div>
+            <!-- about -->
+        <div id="About">
+            <h2>Introduction</h2>
+            <p>Hey everyone, My name is Shrishti Gaur and I'm currently in my second year. I'm pursuing Bachelor of Technology from Guru Tegh Bahadur 4th Centenary Engineering College and I'm currently learning Full Stack Development Program.</p>
+        </div>
+        <h2>My Projects</h2>
+        <!-- all projects -->
+        <section id="Projects">
+            <a href="Project 1.html">
+            <div id="Project1">
+                <h2>Project 1: Metro Assist</h2>
+                <p>Metro Assist is a web-based application designed to help metro commuters retrieve lost belongings and receive station alerts using location tracking. The platform allows users to report or search for lost items and notifies them as they near their destination to prevent missing their stop.
+                Tools Used: HTML, CSS, JavaScript, Firebase.
+                Role: Developed the entire front-end and integrated Firebase for real-time data storage and retrieval.</p>
+                <!-- <a href="Project 1.html">Project 1</a> -->
+            </div>
+            </a>
+            <a href="Project 2.html">
+            <div id="Project2">
+                <h2>Project 2: Personal Portfolio</h2>
+                <p>This is a responsive and minimalistic personal website to showcase my skills, projects, and contact information. Designed with smooth user experience in mind, the site includes animated transitions, a project gallery, and a built-in contact form.
+                Tools Used: HTML, CSS, JavaScript.
+                Role: Designed and built the full website layout, styling, and interactive components.</p>
+                <!-- <p><a href="Project 2.html">Project 2</a></p> -->
+            </div>
+            </a>
+            <a href="Project 3.html">
+            <div id="Project3">
+                <h2>Project 3: Journal App</h2>
+                <p>A basic web journal application that lets users write, edit, and save personal entries. Data is stored locally or using a lightweight backend to maintain privacy and simplicity.
+                Tools Used: Python (Flask), HTML, CSS, SQLite.
+                Role: Built the backend architecture using Flask and implemented data handling and entry management.</p>
+                <!-- <p><a href="Project 3.html">Project 3</a></p> -->
+            </div>
+            </a>
+        </section>
+        <br><br>
+        <section class="form">
+            <!-- contact section -->
+            <div id="Contact">
+                <h2>Contact Section:</h2>
+                <form id="contact-form" onsubmit="formSubmission(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="name" id="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="email" id="email" required><br><br>
+                    <label for="text">Message</label> 
+                    <input type="textarea" placeholder="write your message here" id="text" required><br><br>
+                    <button type="submit">Submit</button>  
+                </form>
+            </div>
+        </section>
+        <h2>Here are some of my hobbies:</h2>
+        <!-- hobbies -->
+        <section class="hobby">
+            <div id="Reading">
+                <h2>Reading</h2>
+                Reading is my favorite hobby because it opens up new worlds and ideas. It helps me relax, improves my vocabulary, and boosts my imagination. Through books, I learn, explore, and grow. For me, reading is not just a hobby—it’s a meaningful part of my life.
+                <ol id="reading-list">
+                    <li>Improves Focus and Concentration</li>
+                    <li>Stress Reduction</li>
+                    <li>Boosts Creativity</li>
+                </ol>
+                <input type="text" id="benefit-reading" placeholder="Add a new benefit">
+                <button onclick="addReadingBenefit()">Add Benefit</button>
+            </div>
+            <div id="Dancing">
+                <h2>Dancing</h2>
+                Dancing is my favorite hobby because it brings me joy and energy. It helps me express my emotions, stay fit, and feel confident. Whether it’s freestyle or a choreographed routine, dancing lets me connect with music and forget all worries. It’s a fun and creative way to express myself.
+                <ol id="dancing-list">
+                <li>Improves Focus and Concentration</li>
+                <li>Stress Reduction</li>
+                <li>Physical Fitness</li>
+                </ol>
+                <input type="text" id="benefit-dancing" placeholder="Add a new benefit">
+                <button onclick="addDancingBenefit()">Add Benefit</button>
+            </div>
+            <div id="Journal">
+                <h2>Journalling</h2>
+                Journaling is my favorite hobby because it helps me express my thoughts and feelings freely. It brings clarity to my mind, reduces stress, and allows me to reflect on my day. Writing in my journal makes me feel calm, focused, and more connected to myself.
+                <ol id="journal-list">
+                <li>Emotional Clarity</li>
+                <li>Boosts Creativity</li>
+                </ol>
+                <input type="text" id="benefit-journal" placeholder="Add a new benefit">
+                <button onclick="addJournalBenefit()">Add Benefit</button>
+            </div>
+        </section>
+        <h2>Contact Me Here:</h2><br>
+        <!-- footer -->
+        <section class="footer">
+            <footer>
+                <a href="https://www.linkedin.com/in/shrishti-gaur-4620b9349/">
+                <div id="linkedin">
+                    Linkedin
+                <!-- <a href="https://www.linkedin.com/in/shrishti-gaur-4620b9349/">Linkedin</a> -->
+                </div>
+                </a>
+                <a href="https://github.com/shrishtigaur01">
+                <div id="github">
+                    Github
+                <!-- <a href="https://github.com/shrishtigaur01">Github</a> -->
+                </div>
+                </a>
+                <a href="https://www.instagram.com/shashspamzzzz/">
+                <div id="instagram">
+                    Instagram
+                <!-- <a href="https://www.instagram.com/shashspamzzzz/">Instagram</a> -->
+                </div>
+                </a>
+                <div id="dateandtime">Current Date and Time:<span id="dateAndTime"></span></div>
+            </footer>
+        </section>
+    </section>
+    </body>
+</html>
